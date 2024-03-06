@@ -2,9 +2,9 @@ import React from "react";
 
 function ProductCard() {
   return (
-    <div>
+    <div className="text-left">
       <div className="bg-[#F6F6F6]">
-        <div className="w-full h-52 p-2 flex justify-end bg-cover bg-center bg-no-repeat bg-[url('https://us.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-bella-tote--M21107_PM2_Front%20view.png?wid=656&hei=656')]">
+        <div className="w-full h-64 p-2 flex justify-end bg-cover bg-center bg-no-repeat bg-[url('https://us.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-bella-tote--M21107_PM2_Front%20view.png?wid=656&hei=656')]">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="20"

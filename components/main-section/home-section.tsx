@@ -1,7 +1,7 @@
 import React from "react";
 import VerticalBar from "../vertical-bar";
 import ProductCard from "../product-card";
-import ProductLayout from "../product-layout";
+import { ProductLayout } from "../product-layout";
 import RightBar from "../right-bar";
 import Link from "next/link";
 
@@ -19,13 +19,6 @@ function HomeSection() {
             <div className="banner w-full h-20 bg-cover bg-no-repeat bg-center bg-[url('https://komehyo.jp/include_html/images/home/202402Cartierwatch_top-100.jpg')]"></div>
             <div className="banner w-full h-20 bg-cover bg-no-repeat bg-center bg-[url('https://komehyo.jp/include_html/images/home/202402Cartierwatch_top-100.jpg')]"></div>
             <div className="banner w-full h-20 bg-cover bg-no-repeat bg-center bg-[url('https://komehyo.jp/include_html/images/home/202402Cartierwatch_top-100.jpg')]"></div>
-          </div>
-
-          <div>
-            <ProductLayout />
-            <ProductLayout />
-            <ProductLayout />
-            <ProductLayout />
           </div>
         </div>
         <RightBar />

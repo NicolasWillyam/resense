@@ -1,5 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import React from "react";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 
 interface FooterItem {
   id: number;
@@ -68,6 +71,8 @@ const footerItems: FooterItem[] = [
 ];
 
 function Footer() {
+  const pathname = usePathname();
+  if (pathname.startsWith("/resense-admin")) return null;
   const renderSubsections = (subsections: FooterItem[]) => {
     return (
       <ul>

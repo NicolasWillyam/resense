@@ -1,7 +1,7 @@
 import Header from "@/components/header/header";
-import HomeSection from "@/components/main-section/home-section";
-import React from "react";
 
+import React from "react";
+import HomeSection from "@/components/main-section/home-section";
 function page() {
   return (
     <main>
