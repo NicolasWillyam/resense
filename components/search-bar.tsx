@@ -21,7 +21,7 @@ function SearchBar() {
         </svg>
         <input
           type="text"
-          className="w-[240px] h-9 outline-none "
+          className="w-[240px] h-9 outline-none bg-white text-black"
           placeholder="Tìm kiếm ..."
         />
       </label>
