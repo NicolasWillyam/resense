@@ -25,6 +25,7 @@ const brands: menuBrands[] = [
 ];
 
 export default async function Page() {
+  
   const products = await client.fetch<SanityProduct[]>(
     groq`*[_type == "product"]
     {

@@ -73,6 +73,7 @@ const footerItems: FooterItem[] = [
 function Footer() {
   const pathname = usePathname();
   if (pathname.startsWith("/resense-admin")) return null;
+  if (pathname.startsWith("/huong-dan-su-dung")) return null;
   const renderSubsections = (subsections: FooterItem[]) => {
     return (
       <ul>

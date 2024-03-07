@@ -10,6 +10,7 @@ import HeaderNote from "./header-note";
 function Header() {
   const pathname = usePathname();
   if (pathname.startsWith("/resense-admin")) return null;
+  if (pathname.startsWith("/huong-dan-su-dung")) return null;
   return (
     <header className="w-full bg-white fixed z-10 top-0 left-0">
       <div className="max-w-[1440px] mx-auto">

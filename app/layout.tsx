@@ -6,6 +6,8 @@ import Footer from "@/components/footer";
 import Pin from "@/components/pin";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Providers } from "@/components/ui/provider";
+import { usePathname } from "next/navigation";
+import RootLayout from "@/components/root-layout";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -16,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default function Layout({
   children,
 }: Readonly<{
   children: React.ReactNode;
@@ -26,10 +28,10 @@ export default function RootLayout({
       <body className={inter.className}>
         <SpeedInsights />
         <Providers>
-          <div className="max-w-[1440px] mx-auto px-4">
+          <div className="">
             <Pin />
             <Header />
-            <div className="pt-40">{children}</div>
+            <RootLayout children={children}/>
             <Footer />
           </div>
         </Providers>
