@@ -18,6 +18,21 @@ export const category = defineType({
                 source: "name"
             }
         },
+
+        
+        {
+            name: "images",
+            title: "Images",
+            type: "array",
+            of: [{type: 'image'}]
+        },
+        {
+            name: "categories",
+            title: "Categories",
+            type: "array",
+            of: [{type: 'string'}],
+            
+        },
     ]
 })
 

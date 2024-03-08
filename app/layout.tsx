@@ -30,9 +30,7 @@ export default function Layout({
         <Providers>
           <div className="">
             <Pin />
-            <Header />
-            <RootLayout children={children}/>
-            <Footer />
+            <RootLayout children={children} />
           </div>
         </Providers>
       </body>

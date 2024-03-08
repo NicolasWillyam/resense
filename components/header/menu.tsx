@@ -8,7 +8,7 @@ interface MenuItems {
 }
 
 const items: MenuItems[] = [
-  { id: 1, name: "THỜI TRANG NỮ", link: "/" },
+  { id: 1, name: "THỜI TRANG NỮ", link: "/thoi-trang-nu" },
   { id: 2, name: "TÚI", link: "/" },
   { id: 3, name: "TRANG SỨC & PHỤ KIỆN", link: "/" },
   { id: 4, name: "ĐỒNG HỒ NỮ", link: "/" },
@@ -25,9 +25,9 @@ function Menu() {
         {items.map((item: MenuItems) => (
           <li
             key={item.id}
-            className="hover:text-black duration-300 ease-in-out bg-red-00 h-full py-2.5 hover:border-black hover:border-b-[3px]"
+            className="hover:text-black duration-300 ease-in-out bg-red-00 h-full py-2.5 hover:border-black hover:font-medium hover:border-b-[3px]"
           >
-            <Link href="/">{item.name}</Link>
+            <Link href={item.link}>{item.name}</Link>
           </li>
         ))}
       </ul>

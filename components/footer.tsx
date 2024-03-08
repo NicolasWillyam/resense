@@ -3,6 +3,7 @@
 import Image from "next/image";
 import React from "react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import Logo from "./ui/logo";
 
 interface FooterItem {
   id: number;
@@ -186,9 +187,9 @@ function Footer() {
         </div>
       </div>
 
-      <div className="w-full py-6 flex items-start justify-between text-[#424242]">
+      <div className="w-full py-6 px-4 flex items-start justify-between text-[#424242]">
         <div className="text-sm font-light">
-          <Image src="/resense.jpeg" alt="logo-image" width={120} height={30} />
+          <Logo />
           <div className="text-sm mt-6">
             RESENSE được cấp phép là đại lý bán đồ cũ dựa trên luật kinh doanh
             đồ cũ.

@@ -9,13 +9,15 @@ import {
 
 
 import { GoChevronRight } from "react-icons/go";
+import Link from 'next/link';
+import Logo from '@/components/ui/logo';
 
 function page() {
   return (
    <div className="max-w-[960px] mx-auto">
      <div className=" h-24 flex items-center justify-between">
       <div className="text-xl font-semibold">HƯỚNG DẪN SỬ DỤNG</div>
-       <Image src="/resense.jpeg" alt="logo-image" height={30} width={160} />
+       <Logo/>
     </div>
 
    <div className="flex gap-2">  <div className="text-sm text-gray-700 font-light">
@@ -82,7 +84,77 @@ function page() {
         </Accordion>
 
       </div>
-      <div className="w-2/3 bg-red-900 h-20"></div>
+      <div className="w-2/3">
+        <div className="grid grid-cols-2 gap-10">
+          <div className="border-t-[1px] border-black">
+            <ul className=''>
+              <li className='font-medium uppercase py-3'>
+                VỀ TRANG WEB NÀY
+              </li>
+              <li>
+                <Link href={'/'}> <div className="py-2 text-sm hover:underline hover:underline-offset-4">Điều khoản sử dụng</div></Link>
+              </li>
+              <li>
+                <Link href={'/'}> <div className="py-2 text-sm ">Chính sách riêng tư</div></Link>
+              </li>
+              <li>
+                <Link href={'/'}> <div className="py-2 text-sm ">Sitemap</div></Link>
+              </li>
+            </ul>
+          </div>
+
+           <div className="border-t-[1px] border-black">
+            <ul className=''>
+              <li className='font-medium uppercase py-3'>
+                VỀ TRANG WEB NÀY
+              </li>
+              <li>
+                <Link href={'/'}> <div className="py-2 text-sm hover:underline hover:underline-offset-4">Điều khoản sử dụng</div></Link>
+              </li>
+              <li>
+                <Link href={'/'}> <div className="py-2 text-sm ">Chính sách riêng tư</div></Link>
+              </li>
+              <li>
+                <Link href={'/'}> <div className="py-2 text-sm ">Sitemap</div></Link>
+              </li>
+            </ul>
+          </div>
+
+           <div className="border-t-[1px] border-black">
+            <ul className=''>
+              <li className='font-medium uppercase py-3'>
+                VỀ TRANG WEB NÀY
+              </li>
+              <li>
+                <Link href={'/'}> <div className="py-2 text-sm hover:underline hover:underline-offset-4">Điều khoản sử dụng</div></Link>
+              </li>
+              <li>
+                <Link href={'/'}> <div className="py-2 text-sm ">Chính sách riêng tư</div></Link>
+              </li>
+              <li>
+                <Link href={'/'}> <div className="py-2 text-sm ">Sitemap</div></Link>
+              </li>
+            </ul>
+          </div>
+
+           <div className="border-t-[1px] border-black">
+            <ul className=''>
+              <li className='font-medium uppercase py-3'>
+                VỀ TRANG WEB NÀY
+              </li>
+              <li>
+                <Link href={'/'}> <div className="py-2 text-sm hover:underline hover:underline-offset-4">Điều khoản sử dụng</div></Link>
+              </li>
+              <li>
+                <Link href={'/'}> <div className="py-2 text-sm ">Chính sách riêng tư</div></Link>
+              </li>
+              <li>
+                <Link href={'/'}> <div className="py-2 text-sm ">Sitemap</div></Link>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
    </div>
   )

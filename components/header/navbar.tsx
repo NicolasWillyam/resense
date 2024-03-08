@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import SearchBar from "../search-bar";
+import Logo from "../ui/logo";
 
 function Navbar() {
   return (
@@ -11,8 +12,8 @@ function Navbar() {
         <div className="font-semibold">| Tiếng Việt</div>
       </div>
 
-      <div className="w-full mx-auto h-full  text-xl font-semibold flex items-center justify-center top-0 -z-10 hover:underline">
-        <Image src="/resense.jpeg" alt="logo-image" height={30} width={160} />
+      <div className="w-full mx-auto h-full  text-xl font-semibold flex items-center justify-center top-0 hover:underline">
+        <Logo/>
       </div>
 
       <div className="text-sm gap-5 flex items-center justify-end">
